@@ -1,0 +1,1 @@
+{"type":"module","name":"buildots-energization-readiness","private":true,"scripts":{"test":"node --test test/*.test.mjs","data":"node data/generate.mjs"}}

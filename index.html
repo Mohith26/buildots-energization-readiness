@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Energization Readiness · Buildots</title>
+<meta name="description" content="Energization Readiness: calibrated ready-for-energization forecasts and a crew recovery planner for data-hall fit-out, an unofficial concept demo for Buildots.">
+<link rel="icon" href="assets/mark.svg">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<link rel="stylesheet" href="styles.css">
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" defer></script>
+</head>
+<body>
+<div class="app">
+  <aside class="rail" aria-label="Main navigation">
+    <a class="logo" href="#/readiness" aria-label="Buildots home" style="border-radius:0;width:56px;height:56px"><img src="assets/mark.svg" alt="Buildots" width="30" height="30"></a>
+    <nav>
+      <a href="#/readiness" aria-label="Dashboard"><i data-lucide="layout-dashboard"></i><span class="tipx">Dashboard</span></a>
+      <a href="#/readiness" aria-label="Progress overview"><i data-lucide="building-2"></i><span class="tipx">Progress overview</span></a>
+      <a href="#/readiness" aria-label="Timeline"><i data-lucide="gantt-chart"></i><span class="tipx">Timeline</span></a>
+      <a href="#/readiness" aria-label="Explorer 360"><i data-lucide="video"></i><span class="tipx">Explorer 360°</span></a>
+      <a href="#/readiness" aria-label="Work plan"><i data-lucide="calendar-check"></i><span class="tipx">Work plan</span></a>
+      <a href="#/readiness" aria-label="Delay forecast"><i data-lucide="triangle-alert"></i><span class="tipx">Delay forecast</span></a>
+      <a href="#/readiness" class="active" aria-current="page" aria-label="Energization readiness"><i data-lucide="zap"></i><span class="tipx">Energization readiness</span></a>
+      <a href="#/readiness" aria-label="Completed quantities"><i data-lucide="receipt-text"></i><span class="tipx">Completed quantities</span></a>
+      <a href="#/readiness" aria-label="Reports"><i data-lucide="file-text"></i><span class="tipx">Reports</span></a>
+    </nav>
+    <div class="bottom"><span class="avatar" aria-hidden="true">MG</span></div>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <div class="l"><h1>Energization readiness</h1><button class="dd" id="bldg" aria-label="Choose building">FRA-2 Campus · Building B <i data-lucide="chevron-down"></i></button></div>
+      <div class="r"><span id="capture">Latest capture</span><button class="dot-btn" id="dot" aria-label="Ask Dot"><i data-lucide="sparkles"></i>Dot.</button></div>
+    </header>
+    <div id="view" aria-live="polite"></div>
+    <footer class="foot"><span>Unofficial concept demo by Mohith Gajjela. Not affiliated with Buildots. Synthetic data.</span><span>Press <kbd>?</kbd> for shortcuts · <a href="https://github.com/Mohith26/buildots-energization-readiness">Source</a></span></footer>
+  </main>
+</div>
+<div id="layer"></div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
